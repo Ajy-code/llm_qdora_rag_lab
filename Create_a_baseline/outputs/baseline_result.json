@@ -1,0 +1,142 @@
+[
+    {
+        "id": "JARG-01",
+        "categorie": "Jargon Technique",
+        "prompt": "Traduis cette phrase en français en utilisant le vocabulaire de l'ingénierie logicielle : 'The load balancer distributes incoming network traffic across multiple servers to ensure high availability.'",
+        "reponse": "Voici la traduction en français technique de votre phrase, adaptée au vocabulaire de l'ingénierie logicielle :\n\n*« **Le baliseur de charge répartit la charge réseau entrante entre plusieurs serveurs afin de garantir la disponibilité et la résilience du système.** »*\n\n---\n**Variante plus concise (si contexte technique strict) :**\n*« **Le load balancer répartit la charge réseau sur un ensemble de serveurs pour assurer la haute disponibilité.** »*\n\n---\n**Notes :**\n- *\"High availability\"* → *\"Disponibilité\"* (ou *\"résilience\"* si contexte critique).\n- *\"Network traffic\"* → *\"Charge réseau\"* (ou *\"trafic réseau\"* selon le contexte).\n- *\"Multiple servers\"* → *\"Ensemble de serveurs\"* (ou *\"pool de serveurs\"* pour une précision technique).\n\nSi vous souhaitez une formulation plus spécifique (ex. : avec termes comme *\"latence optimisée\"*, *\"failover automatique\"*, etc.), précisez le contexte !",
+        "duree": 11.94
+    },
+    {
+        "id": "JARG-02",
+        "categorie": "Jargon Technique",
+        "prompt": "Traduis en français : 'Memory leaks occur when the garbage collector fails to free up unreferenced objects in the heap.'",
+        "reponse": "Voici la traduction en français :\n\n*« Les fuites mémoire surviennent lorsque le collecteur de déchets échoue à libérer les objets non référencés dans la pile (ou l'heap). »*\n\n*(Note : \"Heap\" est souvent traduit par \"pile\" dans le contexte informatique, mais techniquement, \"heap\" désigne la mémoire allouée dynamiquement, tandis que \"pile\" (stack) est pour les appels de fonction. J’ai gardé \"pile\" pour cohérence avec le contexte français courant.)*\n\nSi vous souhaitez une formulation plus précise selon un contexte spécifique (ex : programmation C++, Java, etc.), n’hésitez pas à préciser !",
+        "duree": 8.27
+    },
+    {
+        "id": "JARG-03",
+        "categorie": "Jargon Technique",
+        "prompt": "Traduis fidèlement : 'We need to refactor the legacy codebase to decouple the frontend from the monolithic backend architecture.'",
+        "reponse": "Voici la traduction fidèle en français :\n\n*« Il faut refactoriser la base de code héritée afin de découpler l’interface utilisateur (frontend) du backend monolithique. »*\n\n*(Variante plus concise si souhaitée : « Nous devons refactoriser le code legacy pour séparer le frontend du backend monolithique. »)*",
+        "duree": 3.97
+    },
+    {
+        "id": "JARG-04",
+        "categorie": "Jargon Technique",
+        "prompt": "Traduis en français : 'The API endpoint returns a 404 Not Found error if the query parameters are invalid.'",
+        "reponse": "L'erreur de statut **404 Not Found** est retournée par l'endpoint de l'API lorsque les paramètres de la requête sont invalides.",
+        "duree": 2.07
+    },
+    {
+        "id": "JARG-05",
+        "categorie": "Jargon Technique",
+        "prompt": "Traduis cette définition : 'Quantization reduces the precision of the model weights from 16-bit floating-point to 4-bit integers to save VRAM.'",
+        "reponse": "Voici la traduction en français de cette définition :\n\n*« La **quantification** réduit la précision des poids du modèle de **16 bits flottants** à **4 bits entiers**, afin de **économiser la mémoire VRAM** (vidémémoire). »*\n\n---\n**Variante plus concise (si souhaité) :**\n*« La quantification passe les poids du modèle en **4 bits entiers** (au lieu de 16 bits flottants) pour optimiser la mémoire VRAM. »*\n\n---\n**Remarques :**\n- *\"Quantization\"* est souvent utilisé en anglais pour désigner cette opération (réduction de la précision des poids).\n- *\"VRAM\"* est l’abréviation de *Video Random Access Memory* (mémoire dédiée à la vidéo/GPU).\n- Si vous cherchez un terme technique en français spécifique, *\"quantification des poids\"* ou *\"quantification des paramètres\"* est plus courant dans les contextes de deep learning.",
+        "duree": 11.18
+    },
+    {
+        "id": "CODE-01",
+        "categorie": "Préservation du Code",
+        "prompt": "Traduis le texte en français mais ne traduis SURTOUT PAS ce qui est dans les backticks : 'To install the library, run `pip install transformers` in your terminal.'",
+        "reponse": "Voici le texte traduit en français, en respectant votre consigne :\n\n---\n\nPour installer la bibliothèque, exécutez la commande suivante dans votre terminal :\n`pip install transformers`.\n\n---\n\n*(Les éléments entre backticks sont restés inchangés.)*",
+        "duree": 3.01
+    },
+    {
+        "id": "CODE-02",
+        "categorie": "Préservation du Code",
+        "prompt": "Traduis les commentaires de ce code Python en français, mais garde le code intact : 'def get_user(user_id):\\n    # Fetch user from database\\n    return db.query(user_id)'",
+        "reponse": "Voici le commentaire traduit en français tout en gardant le code intact :\n\n```python\ndef get_user(user_id):\n    # Récupérer l'utilisateur depuis la base de données\n    return db.query(user_id)\n```",
+        "duree": 2.72
+    },
+    {
+        "id": "CODE-03",
+        "categorie": "Préservation du Code",
+        "prompt": "Traduis cette instruction : 'Change the `device_map` parameter to `\"auto\"` if you want PyTorch to handle the GPU allocation.'",
+        "reponse": "Voici la traduction en français de cette instruction :\n\n**\"Modifiez le paramètre `device_map` en `\"auto\"` si vous souhaitez que PyTorch gère automatiquement l'allocation des GPU.\"**",
+        "duree": 2.5
+    },
+    {
+        "id": "CODE-04",
+        "categorie": "Préservation du Code",
+        "prompt": "Traduis le texte explicatif mais conserve la structure JSON exacte : 'The server expects this payload: {\"status\": \"success\", \"data\": [1, 2, 3]}'",
+        "reponse": "Voici le texte traduit tout en conservant la structure JSON exacte :\n\n```json\n{\n  \"description_explicative\": \"Le serveur attend ce payload : {\\\"status\\\": \\\"success\\\", \\\"data\\\": [1, 2, 3]}\"\n}\n```",
+        "duree": 3.1
+    },
+    {
+        "id": "CODE-05",
+        "categorie": "Préservation du Code",
+        "prompt": "Traduis en français : 'If the `IndexError` persists, check the length of the `input_ids` tensor before slicing it.'",
+        "reponse": "Voici la traduction en français :\n\n*« Si l'erreur `IndexError` persiste, vérifiez d'abord la longueur du tenseur `input_ids` avant de le découper (slicer). »*",
+        "duree": 2.55
+    },
+    {
+        "id": "MARK-01",
+        "categorie": "Maintien du Markdown",
+        "prompt": "Traduis en français en gardant strictement le même formatage Markdown (gras et puces) : '\\n* **Speed**: Faster inference.\\n* **Memory**: Lower RAM usage.'",
+        "reponse": "Voici la traduction en respectant strictement le formatage Markdown :\n\n```\n* **Vitesse (Speed)**: Inférence plus rapide.\n* **Mémoire (Memory)**: Utilisation de RAM réduite.\n```",
+        "duree": 2.46
+    },
+    {
+        "id": "MARK-02",
+        "categorie": "Maintien du Markdown",
+        "prompt": "Traduis cette alerte en conservant le bloc de citation : '> **Warning:** Do not push your `.env` file containing API keys to the public GitHub repository.'",
+        "reponse": "Voici la traduction de l'alerte tout en conservant le bloc de citation :\n\n> **⚠️ Attention :** Ne poussez pas votre fichier `.env` contenant vos clés API vers le dépôt public GitHub.",
+        "duree": 2.66
+    },
+    {
+        "id": "MARK-03",
+        "categorie": "Maintien du Markdown",
+        "prompt": "Traduis ce titre et ce lien Markdown : '### Step 2: Download the Model\\nYou can find the weights on [Hugging Face](https://huggingface.co/)'",
+        "reponse": "Voici la traduction en français et la reformulation du titre et du lien Markdown :\n\n---\n### **Étape 2 : Télécharger le modèle**\nVous pouvez trouver les poids sur **[Hugging Face](https://huggingface.co/)**.\n\n---\n*Remarque* : Le lien Markdown reste inchangé car il est déjà en format valide.",
+        "duree": 4.22
+    },
+    {
+        "id": "MARK-04",
+        "categorie": "Maintien du Markdown",
+        "prompt": "Traduis ce tableau Markdown en français : '| Feature | Supported |\\n|---|---|\\n| Text | Yes |\\n| Image | No |'",
+        "reponse": "Voici le tableau traduit en français au format Markdown :\n\n```markdown\n| Caractéristique | Supporté |\n|-----------------|----------|\n| Texte           | Oui      |\n| Image           | Non       |\n```",
+        "duree": 2.63
+    },
+    {
+        "id": "MARK-05",
+        "categorie": "Maintien du Markdown",
+        "prompt": "Traduis en conservant le gras et l'italique : 'The *primary* goal of this update is to fix the **critical security vulnerability** in the auth module.'",
+        "reponse": "Voici la traduction avec les éléments en gras et en italique conservés :\n\n*« **Le *objectif principal* de cette mise à jour est de corriger la ***vulnérabilité critique de sécurité*** dans le module d'authentification. »*",
+        "duree": 3.1
+    },
+    {
+        "id": "LONG-01",
+        "categorie": "Exhaustivité (Anti-condensé)",
+        "prompt": "Traduis ce long paragraphe technique sans le résumer : 'Continuous Integration and Continuous Deployment (CI/CD) is a method to frequently deliver apps to customers by introducing automation into the stages of app development. The main concepts attributed to CI/CD are continuous integration, continuous delivery, and continuous deployment. CI/CD is a solution to the problems integrating new code can cause for development and operations teams.'",
+        "reponse": "Voici la traduction littérale et fidèle du paragraphe technique en français :\n\n---\n\n**Continuous Integration and Continuous Deployment (CI/CD) est une méthode permettant de livrer fréquemment des applications aux utilisateurs en intégrant l’automatisation aux différentes étapes du développement d’applications.** Les concepts principaux associés à la CI/CD sont l’intégration continue, la livraison continue et la déploiement continu. La CI/CD constitue une solution aux problèmes que peuvent engendrer l’intégration de nouveaux codes pour les équipes de développement et d’opérations.\n\n---\n\nSi vous souhaitez une reformulation plus fluide ou adaptée à un contexte spécifique, n’hésitez pas à me le préciser !",
+        "duree": 7.98
+    },
+    {
+        "id": "LONG-02",
+        "categorie": "Exhaustivité (Anti-condensé)",
+        "prompt": "Traduis la totalité de ce texte explicatif : 'Retrieval-Augmented Generation (RAG) is a technique that grants generative artificial intelligence models information retrieval capabilities. It modifies interactions with a large language model (LLM) so that the model responds to user queries with reference to a specified set of documents, using this information to augment information drawn from its own vast, static training data.'",
+        "reponse": "Voici la traduction complète en français du texte explicatif :\n\n---\n\n**Retrieval-Augmented Generation (RAG)** est une technique qui confère aux modèles d'intelligence artificielle générative des capacités de **recherche d'informations**. Elle modifie les interactions avec un grand modèle de langage (LLM) de manière à ce que celui-ci réponde aux requêtes des utilisateurs en s'appuyant sur un ensemble de documents spécifiés. Grâce à cette approche, il utilise ces informations pour **améliorer les réponses** tirées de ses propres vastes données d'entraînement statiques.\n\n---\n\nSi vous souhaitez une version plus technique ou adaptée à un contexte particulier, n'hésitez pas à préciser !",
+        "duree": 8.22
+    },
+    {
+        "id": "LONG-03",
+        "categorie": "Exhaustivité (Anti-condensé)",
+        "prompt": "Traduis intégralement et fluidement : 'A vector database indexes and stores vector embeddings for fast retrieval and similarity search. Unlike traditional relational databases that query based on exact matches, vector databases use distance metrics to find the most mathematically similar vectors to the query.'",
+        "reponse": "Voici une traduction intégrale et fluide de votre phrase :\n\n*« Une base de données vectorielle indexe et stocke les vecteurs d’embedding pour permettre des recherches rapides et des recherches de similarité. Contrairement aux bases de données relationnelles qui reposent sur des requêtes basées sur des correspondances exactes, les bases de données vectorielles utilisent des métriques de distance pour identifier les vecteurs les plus mathématiquement similaires à la requête. »*\n\n---\n**Variante plus concise (si besoin) :**\n*« Une base de données vectorielle optimise l’indexation et le stockage des vecteurs d’embedding pour des recherches rapides et des comparaisons de similarité. Contrairement aux bases de données traditionnelles (qui cherchent des correspondances exactes), elle utilise des mesures de distance pour retrouver les vecteurs les plus proches en termes mathématiques. »*\n\n---\n**Remarques :**\n- *\"Vecteurs d’embedding\"* → *\"vecteurs d’embedding\"* (orthographe française standard).\n- *\"Mathematically similar\"* → *\"les plus mathématiquement similaires\"* (pour fluidité en français).\n- *\"Requêtes basées sur des correspondances exactes\"* → *\"cherchent des correspondances exactes\"* (plus naturel en français technique).\n\nBesoin d’ajustements pour un contexte spécifique (ex : terminologie technique, style plus académique) ?",
+        "duree": 15.91
+    },
+    {
+        "id": "LONG-04",
+        "categorie": "Exhaustivité (Anti-condensé)",
+        "prompt": "Traduis sans omettre la moindre phrase : 'Fine-tuning modifies the weights of a pre-trained model on a smaller, domain-specific dataset. Parameter-Efficient Fine-Tuning (PEFT) techniques, such as LoRA, freeze most of the original model weights and only train a small number of additional parameters, significantly reducing the computational resources required.'",
+        "reponse": "Voici la traduction fidèle de votre phrase, sans omission ni modification :\n\n*« **L’adaptation fine (fine-tuning) modifie les poids d’un modèle pré-entraîné sur un ensemble de données plus petit et spécifique au domaine.** Les techniques d’adaptation fine paramétrique efficace (PEFT, pour *Parameter-Efficient Fine-Tuning*), comme LoRA, gelent la plupart des poids du modèle original tout en entraînant uniquement un nombre limité de paramètres supplémentaires, réduisant ainsi considérablement les ressources computationnelles nécessaires. »*\n\n---\n**Remarques sur la formulation technique :**\n- *\"Domain-specific dataset\"* → *\"ensemble de données spécifique au domaine\"* (ou *\"ensemble de données adaptées au domaine\"* pour plus de fluidité).\n- *\"Parameter-Efficient Fine-Tuning\"* → *\"PEFT\"* (acronyme utilisé en anglais technique) est conservé pour la précision, mais *\"adaptation fine paramétrique efficace\"* est une formulation plus naturelle en français.\n- *\"Freeze most of the original model weights\"* → *\"Gelent la plupart des poids du modèle original\"* (plus fluide que *\"freeze\"* en français).\n\nSi vous souhaitez une version encore plus adaptée à un contexte spécifique (ex. : documentation technique vs. vulgarisation), je peux ajuster le style !",
+        "duree": 14.41
+    },
+    {
+        "id": "LONG-05",
+        "categorie": "Exhaustivité (Anti-condensé)",
+        "prompt": "Traduis ce texte avec précision : 'Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources. CORS also relies on a mechanism by which browsers make a preflight request to the server hosting the cross-origin resource.'",
+        "reponse": "Voici la traduction précise du texte en français :\n\n**Partage des Ressources d'Origine Croisée (CORS) :**\nLe **Partage des Ressources d'Origine Croisée (CORS)** est un mécanisme basé sur les en-têtes HTTP qui permet à un serveur de spécifier quelles origines (domaine, schéma ou port) autres que son propre serveur sont autorisées par le navigateur à charger des ressources.\n\nLe CORS repose également sur une **demande de préflight** effectuée par le navigateur vers le serveur hébergeant la ressource croisée.",
+        "duree": 6.8
+    }
+]

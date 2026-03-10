@@ -1,0 +1,102 @@
+[
+    {
+        "id": "JARG-01",
+        "categorie": "Jargon Technique",
+        "prompt": "Traduis cette phrase en français en utilisant le vocabulaire de l'ingénierie logicielle : 'The load balancer distributes incoming network traffic across multiple servers to ensure high availability.'"
+    },
+    {
+        "id": "JARG-02",
+        "categorie": "Jargon Technique",
+        "prompt": "Traduis en français : 'Memory leaks occur when the garbage collector fails to free up unreferenced objects in the heap.'"
+    },
+    {
+        "id": "JARG-03",
+        "categorie": "Jargon Technique",
+        "prompt": "Traduis fidèlement : 'We need to refactor the legacy codebase to decouple the frontend from the monolithic backend architecture.'"
+    },
+    {
+        "id": "JARG-04",
+        "categorie": "Jargon Technique",
+        "prompt": "Traduis en français : 'The API endpoint returns a 404 Not Found error if the query parameters are invalid.'"
+    },
+    {
+        "id": "JARG-05",
+        "categorie": "Jargon Technique",
+        "prompt": "Traduis cette définition : 'Quantization reduces the precision of the model weights from 16-bit floating-point to 4-bit integers to save VRAM.'"
+    },
+    {
+        "id": "CODE-01",
+        "categorie": "Préservation du Code",
+        "prompt": "Traduis le texte en français mais ne traduis SURTOUT PAS ce qui est dans les backticks : 'To install the library, run `pip install transformers` in your terminal.'"
+    },
+    {
+        "id": "CODE-02",
+        "categorie": "Préservation du Code",
+        "prompt": "Traduis les commentaires de ce code Python en français, mais garde le code intact : 'def get_user(user_id):\\n    # Fetch user from database\\n    return db.query(user_id)'"
+    },
+    {
+        "id": "CODE-03",
+        "categorie": "Préservation du Code",
+        "prompt": "Traduis cette instruction : 'Change the `device_map` parameter to `\"auto\"` if you want PyTorch to handle the GPU allocation.'"
+    },
+    {
+        "id": "CODE-04",
+        "categorie": "Préservation du Code",
+        "prompt": "Traduis le texte explicatif mais conserve la structure JSON exacte : 'The server expects this payload: {\"status\": \"success\", \"data\": [1, 2, 3]}'"
+    },
+    {
+        "id": "CODE-05",
+        "categorie": "Préservation du Code",
+        "prompt": "Traduis en français : 'If the `IndexError` persists, check the length of the `input_ids` tensor before slicing it.'"
+    },
+    {
+        "id": "MARK-01",
+        "categorie": "Maintien du Markdown",
+        "prompt": "Traduis en français en gardant strictement le même formatage Markdown (gras et puces) : '\\n* **Speed**: Faster inference.\\n* **Memory**: Lower RAM usage.'"
+    },
+    {
+        "id": "MARK-02",
+        "categorie": "Maintien du Markdown",
+        "prompt": "Traduis cette alerte en conservant le bloc de citation : '> **Warning:** Do not push your `.env` file containing API keys to the public GitHub repository.'"
+    },
+    {
+        "id": "MARK-03",
+        "categorie": "Maintien du Markdown",
+        "prompt": "Traduis ce titre et ce lien Markdown : '### Step 2: Download the Model\\nYou can find the weights on [Hugging Face](https://huggingface.co/)'"
+    },
+    {
+        "id": "MARK-04",
+        "categorie": "Maintien du Markdown",
+        "prompt": "Traduis ce tableau Markdown en français : '| Feature | Supported |\\n|---|---|\\n| Text | Yes |\\n| Image | No |'"
+    },
+    {
+        "id": "MARK-05",
+        "categorie": "Maintien du Markdown",
+        "prompt": "Traduis en conservant le gras et l'italique : 'The *primary* goal of this update is to fix the **critical security vulnerability** in the auth module.'"
+    },
+    {
+        "id": "LONG-01",
+        "categorie": "Exhaustivité (Anti-condensé)",
+        "prompt": "Traduis ce long paragraphe technique sans le résumer : 'Continuous Integration and Continuous Deployment (CI/CD) is a method to frequently deliver apps to customers by introducing automation into the stages of app development. The main concepts attributed to CI/CD are continuous integration, continuous delivery, and continuous deployment. CI/CD is a solution to the problems integrating new code can cause for development and operations teams.'"
+    },
+    {
+        "id": "LONG-02",
+        "categorie": "Exhaustivité (Anti-condensé)",
+        "prompt": "Traduis la totalité de ce texte explicatif : 'Retrieval-Augmented Generation (RAG) is a technique that grants generative artificial intelligence models information retrieval capabilities. It modifies interactions with a large language model (LLM) so that the model responds to user queries with reference to a specified set of documents, using this information to augment information drawn from its own vast, static training data.'"
+    },
+    {
+        "id": "LONG-03",
+        "categorie": "Exhaustivité (Anti-condensé)",
+        "prompt": "Traduis intégralement et fluidement : 'A vector database indexes and stores vector embeddings for fast retrieval and similarity search. Unlike traditional relational databases that query based on exact matches, vector databases use distance metrics to find the most mathematically similar vectors to the query.'"
+    },
+    {
+        "id": "LONG-04",
+        "categorie": "Exhaustivité (Anti-condensé)",
+        "prompt": "Traduis sans omettre la moindre phrase : 'Fine-tuning modifies the weights of a pre-trained model on a smaller, domain-specific dataset. Parameter-Efficient Fine-Tuning (PEFT) techniques, such as LoRA, freeze most of the original model weights and only train a small number of additional parameters, significantly reducing the computational resources required.'"
+    },
+    {
+        "id": "LONG-05",
+        "categorie": "Exhaustivité (Anti-condensé)",
+        "prompt": "Traduis ce texte avec précision : 'Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources. CORS also relies on a mechanism by which browsers make a preflight request to the server hosting the cross-origin resource.'"
+    }
+]
