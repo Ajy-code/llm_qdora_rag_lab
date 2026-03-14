@@ -1,0 +1,48 @@
+{
+    "domain_subarea": [
+        "cloud_architecture",
+        "cybersecurity_protocols",
+        "database_administration"
+    ],
+    "source_type": [
+        "api_documentation",
+        "release_notes",
+        "user_manual"
+    ],
+    "task_type": [
+        "translate_en_to_fr",
+        "translate_fr_to_en"
+    ],
+    "difficulty": [
+        "easy",
+        "medium",
+        "hard"
+    ],
+    "noise_level": [
+        "clean",
+        "semi_noisy",
+        "noisy"
+    ],
+    "challenge_type": [
+        "straightforward",
+        "terminology_ambiguity",
+        "false_friends",
+        "mixed_code_text",
+        "format_sensitive"
+    ],
+    "output_format": [
+        "plain_text",
+        "preserve_source_format",
+        "json"
+    ],
+    "constraint_type": [
+        "preserve_identifiers",
+        "strict_json_keys"
+    ],
+    "preservation_constraint": [
+        "preserve_code_blocks",
+        "preserve_markdown",
+        "preserve_placeholders",
+        "preserve_cli_commands"
+    ]
+}

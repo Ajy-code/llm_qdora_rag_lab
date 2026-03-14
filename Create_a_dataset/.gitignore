@@ -1,0 +1,8 @@
+# Fichiers de variables d'environnement (Sécurité)
+.env
+
+# Environnement virtuel Python (Poids inutile)
+.venv/
+
+# Cache et fichiers compilés par Python
+__pycache__/

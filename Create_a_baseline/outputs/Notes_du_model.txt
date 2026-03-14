@@ -1,0 +1,22 @@
+Voici l'audit technique de ton modèle Ministral 3B, évalué comme un composant logiciel automatisé.
+
+1. Le point fort : L'endurance cognitive (Score : 9/10)
+La grande réussite de ce test concerne la catégorie Exhaustivité (LONG). Contrairement à beaucoup de petits modèles qui s'épuisent et résument la fin des textes, le tien a traduit la totalité des paragraphes complexes (RAG, CI/CD, Base vectorielle) sans omettre d'informations. La mécanique de base du langage est solide.
+
+2. Le défaut critique : Le "Syndrome du Majordome" (Score d'automatisation : 2/10)
+C'est le problème majeur qui rend ce modèle actuellement inutilisable en production. Le modèle a été surentraîné pour être "poli" et conversationnel.
+
+Perte de temps de calcul : Au lieu de générer uniquement la réponse, il génère des introductions ("Voici la traduction en français...") et des conclusions ("Si vous souhaitez une formulation plus spécifique..."). Cela gaspille des centaines de tokens et explique des temps d'inférence très longs (jusqu'à 15.91 secondes pour LONG-03).
+
+Destruction des structures de données : Dans le test CODE-04, on lui demandait de conserver le payload JSON intact. Le modèle a voulu bien faire et a inventé une clé "description_explicative", ce qui ferait crasher instantanément n'importe quelle API qui tenterait de lire ce JSON.
+
+3. La fragilité technique (Score de précision : 5/10)
+Dès qu'on le sort de la prose classique, le modèle trébuche sur la syntaxe :
+
+Hallucination de jargon (JARG-01) : Il traduit "Load balancer" par "Baliseur de charge", un terme qui n'existe pas en ingénierie, avant de se corriger dans ses propres notes.
+
+Casse du Markdown (MARK-05) : En essayant de combiner le gras et l'italique (*« **Le *objectif...), il a généré une syntaxe Markdown invalide qui ne s'affichera pas correctement sur une interface web.
+
+Le Verdict de la Baseline
+Note globale d'ingénierie : 5/10.
+Le moteur linguistique est bon, mais l'enrobage le rend toxique pour un pipeline logiciel. Si tu intègres ce modèle tel quel dans une application, tu devras écrire des dizaines de fonctions Python (expressions régulières) pour "nettoyer" ses réponses et extraire la vraie donnée.
