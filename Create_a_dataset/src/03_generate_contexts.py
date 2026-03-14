@@ -2,6 +2,7 @@ import json
 import os
 from dotenv import load_dotenv
 import openai
+from tqdm import tqdm
 
 # Calcule le chemin absolu du dossier où se trouve ton script '06_baseline.py' (le dossier 'src')
 dossier_script = os.path.dirname(os.path.abspath(__file__))
@@ -15,41 +16,67 @@ with open(chemin_fichier,"r") as f:
         dict_combo=json.loads(combo)
         combinaisons.append(dict_combo)
 
+#Mappage pour créer un prompt de qualité (Prompt expansion)
+difficulty_map = {
+    "easy": "vocabulaire technique accessible, structure claire, phrases courtes à moyennes, faible ambiguïté",
+    "medium": "vocabulaire technique normal, structure réaliste, quelques implicites ou dépendances contextuelles légères",
+    "hard": "densité technique plus élevée, structure plus compacte ou spécialisée, ambiguïtés plausibles, lecture plus exigeante",
+}
+
+noise_map = {
+    "clean": "texte propre, bien formaté, sans artefacts",
+    "semi_noisy": "légères irrégularités réalistes : ponctuation imparfaite, ligne légèrement cassée, abréviations usuelles, petite incohérence de formatage",
+    "noisy": "texte plus dégradé mais exploitable, avec plusieurs artefacts plausibles : abréviations ambiguës, structure partiellement cassée, alignement imparfait ou fragment incomplet",
+}
+
+challenge_map = {
+    "straightforward": "texte direct, clair, sans piège lexical notable",
+    "terminology_ambiguity": "inclure quelques termes techniques dont la traduction dépend du contexte",
+    "false_friends": "inclure un ou deux faux amis techniques plausibles",
+    "mixed_code_text": "mêler naturellement prose technique et éléments non narratifs comme commande, config ou snippet",
+    "format_sensitive": "faire dépendre une partie du sens de la structure, du balisage, des puces ou du découpage",
+}
+
+preservation_map = {
+    "preserve_code_blocks": "inclure au moins un bloc de code ou de configuration crédible",
+    "preserve_markdown": "inclure une structure markdown réaliste",
+    "preserve_placeholders": "inclure des placeholders plausibles comme {user_id}, <tenant_id>, $REGION",
+    "preserve_cli_commands": "inclure au moins une commande terminal crédible",
+}
+
 liste_prompts=[]
 for combo in combinaisons:
     # 1. Logique de langue (très importante)
     langue_source = "Anglais" if combo['task_type'] == "translate_en_to_fr" else "Français"
 
     # 2. Le prompt dynamique (f-string)
-    prompt_contexte = f"""Tu es un Ingénieur IT Senior expert en {combo['domain_subarea']}.
-    Ta mission est de rédiger un court extrait brut et très réaliste de type : {combo['source_type']}.
+    prompt_contexte = f"""
+        Tu es un ingénieur IT senior spécialiste de {combo['domain_subarea']}.
 
-    RÈGLES STRICTES DE RÉDACTION :
-        - Langue : Le texte doit être IMPÉRATIVEMENT et UNIQUEMENT rédigé en {langue_source}.
-        - Difficulté technique : {combo['difficulty']}. Utilise le jargon professionnel approprié.
-        - Bruit (noise_level) : {combo['noise_level']}. (Si "noisy", inclus des abréviations ambiguës ou un formatage imparfait. Si "clean", fais un texte parfait).
-        - Piège sémantique (challenge_type) : Le texte doit absolument contenir la caractéristique suivante : {combo['challenge_type']}.
+        Produis un document source brut, court, réaliste et professionnel de type {combo['source_type']}.
 
-    CONTRAINTES DE STRUCTURE (Prépare le terrain pour une future traduction) :
-        - Assure-toi que le texte inclut des éléments liés à la contrainte : {combo['preservation_constraint']} (ex: si c'est "preserve_cli_commands", inclus de vraies commandes terminal).
-        - Le format implicite de ce document source doit être compatible avec une future extraction de type : {combo['output_format']}.
+        Contraintes :
+            - langue unique : {langue_source}
+            - difficulté : {difficulty_map[combo['difficulty']]}
+            - bruit : {noise_map[combo['noise_level']]}
+            - défi de traduction : {challenge_map[combo['challenge_type']]}
+            - contrainte de préservation : {preservation_map[combo['preservation_constraint']]}
 
-    FORMAT DE SORTIE :
-    Génère UNIQUEMENT le document source brut. N'ajoute AUCUNE introduction, AUCUNE politesse, et AUCUN commentaire. Ne réponds pas "Voici le texte".
+        Règles :
+            - texte crédible, spécifique, techniquement plausible
+            - adapté naturellement au type de document demandé
+            - pas scolaire, pas explicatif, pas artificiel
+            - ne jamais mentionner les consignes
+            - ne rien ajouter avant ni après le document
+            - longueur cible : 80 à 180 mots
+
+        Retourne uniquement le document source brut.
         """
     #Génération d'un dictionnaire par prompt (méthode pro)
     prompt_dict={}
     prompt_dict["plan_id"]=combo["plan_id"]
     prompt_dict["prompt_text"]=prompt_contexte
     liste_prompts.append(prompt_dict)
-
-# Construit le chemin absolu : src -> remonte (..) -> data -> taxonomy -> prompt_generation.jsonl
-chemin_fichier1 = os.path.join(dossier_script, "..", "data", "taxonomy","prompt_generation.jsonl")
-
-#Enregistrer tous les prompts dans un fichier
-with open(chemin_fichier1,"w",encoding="utf-8") as f:
-    for prompt in liste_prompts:
-        f.write(json.dumps(prompt,ensure_ascii=False) + "\n")
 
 #Lis le fichier .env et récupère les variables
 load_dotenv()
@@ -62,7 +89,7 @@ client = openai.OpenAI(api_key=API_KEY,base_url=API_BASE_URL)
 
 #L'entrée (les contextes) qui sera donnée à MODEL_NAME pour avoir le couple entrée-sortie 
 contexts=[]
-for prompt_dict in liste_prompts[:2]:
+for prompt_dict in tqdm(liste_prompts,desc="Génération des contextes"):
     message=[{"role": "system", "content": "Tu es un générateur de données synthétiques strict. Tu ne réponds qu'avec le texte brut demandé, sans aucun formatage markdown autour si ce n'est pas demandé."},
         {"role":"user","content":prompt_dict["prompt_text"]}]
     #La réponse du model, c'est un objet Pydantic
