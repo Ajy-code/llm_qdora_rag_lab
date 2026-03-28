@@ -1,0 +1,12 @@
+cat << 'EOF' > .gitignore
+# Ignorer les modèles et données lourdes
+Quant_full/models/
+Quant_full/outputs/
+
+# Ignorer la compilation de llama.cpp
+Quant_full/src/llama.cpp/
+
+# Ignorer les environnements virtuels Python (au cas où)
+.venv/
+__pycache__/
+EOF
