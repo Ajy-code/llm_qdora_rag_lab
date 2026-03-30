@@ -1,0 +1,155 @@
+Article 10
+Données et gouvernance des données
+1.   Les systèmes d’IA à haut risque faisant appel à des techniques qui impliquent l’entraînement de modèles d’IA au moyen de données sont développés sur la base de jeux de données d’entraînement, de validation et de test qui satisfont aux critères de qualité visés aux paragraphes 2 à 5 chaque fois que ces jeux de données sont utilisés.
+2.   Les jeux de données d’entraînement, de validation et de test sont soumis à des pratiques en matière de gouvernance et de gestion des données appropriées à la destination du systèmes d’IA à haut risque. Ces pratiques concernent en particulier:
+a)
+les choix de conception pertinents;
+
+
+b)
+les processus de collecte de données et l’origine des données, ainsi que, dans le cas des données à caractère personnel, la finalité initiale de la collecte de données;
+
+
+c)
+les opérations de traitement pertinentes pour la préparation des données, telles que l’annotation, l’étiquetage, le nettoyage, la mise à jour, l’enrichissement et l’agrégation;
+
+
+d)
+la formulation d’hypothèses, notamment en ce qui concerne les informations que les données sont censées mesurer et représenter;
+
+
+e)
+une évaluation de la disponibilité, de la quantité et de l’adéquation des jeux de données nécessaires;
+
+
+f)
+un examen permettant de repérer d’éventuels biais qui sont susceptibles de porter atteinte à la santé et à la sécurité des personnes, d’avoir une incidence négative sur les droits fondamentaux ou de se traduire par une discrimination interdite par le droit de l’Union, en particulier lorsque les données de sortie influencent les entrées pour les opérations futures;
+
+
+g)
+les mesures appropriées visant à détecter, prévenir et atténuer les éventuels biais repérés conformément au point f);
+
+
+h)
+la détection de lacunes ou déficiences pertinentes dans les données qui empêchent l’application du présent règlement, et la manière dont ces lacunes ou déficiences peuvent être comblées.
+
+3.   Les jeux de données d’entraînement, de validation et de test sont pertinents, suffisamment représentatifs et, dans toute la mesure possible, exempts d’erreurs et complets au regard de la destination. Ils possèdent les propriétés statistiques appropriées, y compris, le cas échéant, en ce qui concerne les personnes ou groupes de personnes à l’égard desquels le système d’IA à haut risque est destiné à être utilisé. Ces caractéristiques des jeux de données peuvent être remplies au niveau des jeux de données pris individuellement ou d’une combinaison de ceux-ci.
+4.   Les jeux de données tiennent compte, dans la mesure requise par la destination, des caractéristiques ou éléments propres au cadre géographique, contextuel, comportemental ou fonctionnel spécifique dans lequel le système d’IA à haut risque est destiné à être utilisé.
+5.   Dans la mesure où cela est strictement nécessaire aux fins de la détection et de la correction des biais en ce qui concerne les systèmes d’IA à haut risque, conformément au paragraphe 2, points f) et g), du présent article, les fournisseurs de ces systèmes peuvent exceptionnellement traiter des catégories particulières de données à caractère personnel, sous réserve de garanties appropriées pour les droits et libertés fondamentaux des personnes physiques. Outre les dispositions des règlements (UE) 2016/679 et (UE) 2018/1725 et de la directive (UE) 2016/680, toutes les conditions suivantes doivent être réunies pour que ce traitement puisse avoir lieu:
+a)
+la détection et la correction des biais ne peuvent être satisfaites de manière efficace en traitant d’autres données, y compris des données synthétiques ou anonymisées;
+
+
+b)
+les catégories particulières de données à caractère personnel sont soumises à des limitations techniques relatives à la réutilisation des données à caractère personnel, ainsi qu’aux mesures les plus avancées en matière de sécurité et de protection de la vie privée, y compris la pseudonymisation;
+
+
+c)
+les catégories particulières de données à caractère personnel font l’objet de mesures visant à garantir que les données à caractère personnel traitées sont sécurisées, protégées et soumises à des garanties appropriées, y compris des contrôles stricts et une documentation de l’accès, afin d’éviter toute mauvaise utilisation et de veiller à ce que seules les personnes autorisées ayant des obligations de confidentialité appropriées aient accès à ces données à caractère personnel;
+
+
+d)
+les catégories particulières de données à caractère personnel ne doivent pas être transmises, transférées ou consultées d’une autre manière par d’autres parties;
+
+
+e)
+les catégories particulières de données à caractère personnel sont supprimées une fois que le biais a été corrigé ou que la période de conservation des données à caractère personnel a expiré, selon celle de ces deux échéances qui arrive en premier;
+
+
+f)
+les registres des activités de traitement visés dans les règlements (UE) 2016/679 et (UE) 2018/1725 et dans la directive (UE) 2016/680 comprennent les raisons pour lesquelles le traitement des catégories particulières de données à caractère personnel était strictement nécessaire pour détecter et corriger les biais, ainsi que la raison pour laquelle cet objectif n’a pas pu être atteint par le traitement d’autres données.
+
+6.   En ce qui concerne le développement de systèmes d’IA à haut risque qui ne font pas appel à des techniques qui impliquent l’entraînement de modèles d’IA, les paragraphes 2 à 5 s’appliquent uniquement aux jeux de données de test.
+Article 11
+Documentation technique
+1.   La documentation technique relative à un système d’IA à haut risque est établie avant que ce système ne soit mis sur le marché ou mis en service et est tenue à jour.
+La documentation technique est établie de manière à démontrer que le système d’IA à haut risque satisfait aux exigences énoncées dans la présente section et à fournir aux autorités nationales compétentes et aux organismes notifiés les informations nécessaires sous une forme claire et intelligible pour évaluer la conformité du système d’IA avec ces exigences. Elle contient, au minimum, les éléments énoncés à l’annexe IV. Les PME, y compris les jeunes pousses, peuvent fournir des éléments de la documentation technique spécifiée à l’annexe IV d’une manière simplifiée. À cette fin, la Commission établit un formulaire de documentation technique simplifié ciblant les besoins des petites entreprises et des microentreprises. Lorsqu’une PME, y compris une jeune pousse, choisit de fournir les informations requises à l’annexe IV de manière simplifiée, elle utilise le formulaire visé au présent paragraphe. Les organismes notifiés acceptent le formulaire aux fins de l’évaluation de la conformité.
+2.   Lorsqu’un système d’IA à haut risque lié à un produit couvert par la législation d’harmonisation de l’Union dont la liste figure à la section A de l’annexe I est mis sur le marché ou mis en service, un seul ensemble de documentation technique est établi, contenant toutes les informations visées au paragraphe 1, ainsi que les informations requises en vertu de ces actes juridiques.
+3.   La Commission est habilitée à adopter des actes délégués conformément à l’article 97 pour modifier l’annexe IV, lorsque cela est nécessaire, afin de garantir que, compte tenu du progrès technique, la documentation technique fournit toutes les informations requises pour évaluer la conformité du système avec les exigences énoncées dans la présente section.
+Article 12
+Enregistrement
+1.   Les systèmes d’IA à haut risque permettent, techniquement, l’enregistrement automatique des événements (journaux) tout au long de la durée de vie du système.
+2.   Afin de garantir un degré de traçabilité du fonctionnement d’un système d’IA qui soit adapté à la destination du système, les fonctionnalités de journalisation permettent l’enregistrement des événements pertinents pour:
+a)
+repérer les situations susceptibles d’avoir pour effet que le système d’IA à haut risque présente un risque au sens de l’article 79, paragraphe 1, ou d’entraîner une modification substantielle;
+
+
+b)
+faciliter la surveillance après commercialisation visée à l’article 72; et
+
+
+c)
+surveiller le fonctionnement du système d’IA à haut risque comme prévu à l’article 26, paragraphe 5.
+
+3.   Pour les systèmes d’IA à haut risque visés à l’annexe III, point 1 a), les fonctionnalités de journalisation fournissent, au minimum:
+a)
+l’enregistrement de la période de chaque utilisation du système (date et heure de début et de fin pour chaque utilisation);
+
+
+b)
+la base de données de référence utilisée par le système pour vérifier les données d’entrée;
+
+
+c)
+les données d’entrée pour lesquelles la recherche a abouti à une correspondance;
+
+
+d)
+l’identification des personnes physiques participant à la vérification des résultats, visées à l’article 14, paragraphe 5.
+
+Article 13
+Transparence et fourniture d’informations aux déployeurs
+1.   La conception et le développement des systèmes d’IA à haut risque sont tels que le fonctionnement de ces systèmes est suffisamment transparent pour permettre aux déployeurs d’interpréter les sorties d’un système et de les utiliser de manière appropriée. Un type et un niveau adéquats de transparence sont garantis afin de veiller au respect des obligations pertinentes incombant au fournisseur et au déployeur énoncées à la section 3.
+2.   Les systèmes d’IA à haut risque sont accompagnés d’une notice d’utilisation dans un format numérique approprié ou autre, contenant des informations concises, complètes, exactes et claires, qui soient pertinentes, accessibles et compréhensibles pour les déployeurs.
+3.   La notice d’utilisation contient au moins les informations suivantes:
+a)
+l’identité et les coordonnées du fournisseur et, le cas échéant, de son mandataire;
+
+
+b)
+les caractéristiques, les capacités et les limites de performance du système d’IA à haut risque, notamment:
+i)
+sa destination;
+
+
+ii)
+le niveau d’exactitude, y compris les indicateurs utilisés, de robustesse et de cybersécurité visé à l’article 15 qui a servi de référence pour les tests et la validation du système d’IA à haut risque et qui peut être attendu, ainsi que toutes circonstances connues et prévisibles susceptibles d’avoir une incidence sur le niveau attendu d’exactitude, de robustesse et de cybersécurité;
+
+
+iii)
+toutes circonstances connues ou prévisibles liées à l’utilisation du système d’IA à haut risque conformément à sa destination ou dans des conditions de mauvaise utilisation raisonnablement prévisible, susceptibles d’entraîner des risques pour la santé et la sécurité ou pour les droits fondamentaux visés à l’article 9, paragraphe 2;
+
+
+iv)
+le cas échéant, les capacités et caractéristiques techniques du système d’IA à haut risque à fournir des informations pertinentes pour expliquer ses sorties;
+
+
+v)
+le cas échéant, sa performance en ce qui concerne des personnes ou groupes de personnes spécifiques à l’égard desquels le système est destiné à être utilisé;
+
+
+vi)
+le cas échéant, les spécifications relatives aux données d’entrée, ou toute autre information pertinente concernant les jeux de données d’entraînement, de validation et de test utilisés, compte tenu de la destination du système d’IA à haut risque;
+
+
+vii)
+le cas échéant, les informations permettant aux déployeurs d’interpréter les sorties du système d’IA à haut risque et de les utiliser de manière appropriée;
+
+
+
+
+
+c)
+les modifications du système d’IA à haut risque et de sa performance qui ont été prédéterminées par le fournisseur au moment de l’évaluation initiale de la conformité, le cas échéant;
+
+
+d)
+les mesures de contrôle humain visées à l’article 14, notamment les mesures techniques mises en place pour faciliter l’interprétation des sorties des systèmes d’IA à haut risque par les déployeurs;
+
+
+e)
+les ressources informatiques et matérielles nécessaires, la durée de vie attendue du système d’IA à haut risque et toutes les mesures de maintenance et de suivi, y compris leur fréquence, nécessaires pour assurer le bon fonctionnement de ce système d’IA, notamment en ce qui concerne les mises à jour logicielles;
+
+
+f)
+le cas échéant, une description des mécanismes compris dans le système d’IA à haut risque qui permet aux déployeurs de collecter, stocker et interpréter correctement les journaux, conformément à l’article 12.

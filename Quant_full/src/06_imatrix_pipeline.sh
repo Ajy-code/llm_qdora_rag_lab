@@ -19,13 +19,13 @@ mkdir -p $DAT_DIR
 #Vérification que llama-quantize est bien présent sinon on le télécharge
 cd llama.cpp
 if [ ! -f "build/bin/llama-quantize" ]; then
-    cmake -B build
+    cmake -B build -DGGML_CUDA=ON
     cmake --build build --config Release -j --target llama-quantize
 fi
 
 #Vérification que llama-imatrix est bien présent sinon on le télécharge
 if [ ! -f "build/bin/llama-imatrix" ]; then
-    cmake -B build
+    cmake -B build -DGGML_CUDA=ON
     cmake --build build --config Release -j --target llama-imatrix
 fi
 cd ..

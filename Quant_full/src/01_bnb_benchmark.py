@@ -74,7 +74,7 @@ for config_name,config in configs.items():
     gc.collect()
     torch.cuda.empty_cache()
 
-# Chemin de sauvegarde (à adapter selon ton arborescence exacte)
+# Chemin de sauvegarde 
 file_output = os.path.join(dossier_script, "..", "outputs", "bnb", "bnb_benchmark_results.json")
 
 # On s'assure que le dossier existe

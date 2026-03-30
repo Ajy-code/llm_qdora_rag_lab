@@ -16,7 +16,7 @@ mkdir -p $QUANT_DIR
 cd llama.cpp
 #Création de l'executable en c++ qui va quantizé le fichier gguf
 if [ ! -f "build/bin/llama-quantize" ]; then
-    cmake -B build
+    cmake -B build -DGGML_CUDA=ON
     cmake --build build --config Release -j --target llama-quantize
 fi
 cd ..
