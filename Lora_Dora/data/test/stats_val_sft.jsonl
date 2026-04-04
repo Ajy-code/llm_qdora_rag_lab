@@ -1,0 +1,21 @@
+{"nb_tokens_prompt": 395, "nb_tokens_response": 421, "nb_tokens": 816}
+{"nb_tokens_prompt": 658, "nb_tokens_response": 457, "nb_tokens": 1115}
+{"nb_tokens_prompt": 372, "nb_tokens_response": 469, "nb_tokens": 841}
+{"nb_tokens_prompt": 345, "nb_tokens_response": 220, "nb_tokens": 565}
+{"nb_tokens_prompt": 450, "nb_tokens_response": 504, "nb_tokens": 954}
+{"nb_tokens_prompt": 531, "nb_tokens_response": 397, "nb_tokens": 928}
+{"nb_tokens_prompt": 465, "nb_tokens_response": 479, "nb_tokens": 944}
+{"nb_tokens_prompt": 353, "nb_tokens_response": 214, "nb_tokens": 567}
+{"nb_tokens_prompt": 440, "nb_tokens_response": 516, "nb_tokens": 956}
+{"nb_tokens_prompt": 494, "nb_tokens_response": 313, "nb_tokens": 807}
+{"nb_tokens_prompt": 576, "nb_tokens_response": 441, "nb_tokens": 1017}
+{"nb_tokens_prompt": 517, "nb_tokens_response": 316, "nb_tokens": 833}
+{"nb_tokens_prompt": 366, "nb_tokens_response": 443, "nb_tokens": 809}
+{"nb_tokens_prompt": 352, "nb_tokens_response": 380, "nb_tokens": 732}
+{"nb_tokens_prompt": 522, "nb_tokens_response": 416, "nb_tokens": 938}
+{"nb_tokens_prompt": 411, "nb_tokens_response": 255, "nb_tokens": 666}
+{"nb_tokens_prompt": 816, "nb_tokens_response": 908, "nb_tokens": 1724}
+{"nb_tokens_prompt": 576, "nb_tokens_response": 539, "nb_tokens": 1115}
+{"nb_tokens_prompt": 626, "nb_tokens_response": 461, "nb_tokens": 1087}
+{"nb_tokens_prompt": 481, "nb_tokens_response": 372, "nb_tokens": 853}
+{"mean_tokens": 913.35, "mean_tokens_prompt": 487.3, "mean_tokens_response": 426.05, "max_nb_tokens": 1724, "max_nb_tokens_prompt": 816, "max_nb_tokens_response": 908}

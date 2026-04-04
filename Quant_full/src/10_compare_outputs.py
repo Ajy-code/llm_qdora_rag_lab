@@ -50,7 +50,7 @@ models=[MODEL_imatrix,MODEL_quant,MODEL_ref]
 prompts=["Génère un dictionnaire JSON strict contenant 3 capitales européennes. Ne renvoie que le JSON, aucun texte avant ou après."
          ,"Explique le concept de l'attention dans les réseaux de neurones en utilisant une métaphore avec une bibliothèque. Sois précis et détaillé."
          ,"Combien d'yeux a un cheval normal ? Réponds en une seule phrase."
-         ,f"Voici un document de référence : {preparer_contexte(texte_base=texte_base,aiguille=aiguille,position="millieu")}; Question : Quel est le code secret d'annulation du serveur central ? "]
+         ,f"Voici un document de référence : {preparer_contexte(texte_base=texte_base,aiguille=aiguille,position="milieu")}; Question : Quel est le code secret d'annulation du serveur central ? "]
 
 results=[]
 for model in models:
