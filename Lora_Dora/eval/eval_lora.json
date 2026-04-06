@@ -1,0 +1,148 @@
+{
+    "train_last_loss": 0.15522734820842743,
+    "train_runtime": 111.3796,
+    "train_samples_per_second": 0.602,
+    "eval_loss": 0.14106830954551697,
+    "baseline_test": [
+        {
+            "id": "JARG-01",
+            "categorie": "Jargon Technique",
+            "prompt": "Traduis cette phrase en fran\u00e7ais en utilisant le vocabulaire de l'ing\u00e9nierie logicielle : 'The load balancer distributes incoming network traffic across multiple servers to ensure high availability.'",
+            "response": "Voici la traduction de la phrase en fran\u00e7ais avec un vocabulaire adapt\u00e9 \u00e0 l'ing\u00e9nierie logicielle :\n\n*\u00ab Le **distributeur de charge** r\u00e9partit la **traffic r\u00e9seau entrant** sur plusieurs **serveurs** afin d'assurer une **disponibilit\u00e9 \u00e9lev\u00e9e**.*\u00bb",
+            "duree": 2.62
+        },
+        {
+            "id": "JARG-02",
+            "categorie": "Jargon Technique",
+            "prompt": "Traduis en fran\u00e7ais : 'Memory leaks occur when the garbage collector fails to free up unreferenced objects in the heap.'",
+            "response": "Les fuites m\u00e9moire surviennent lorsque le collecteur de d\u00e9chets \u00e9choue \u00e0 lib\u00e9rer les objets non r\u00e9f\u00e9renc\u00e9s dans la pile.",
+            "duree": 1.14
+        },
+        {
+            "id": "JARG-03",
+            "categorie": "Jargon Technique",
+            "prompt": "Traduis fid\u00e8lement : 'We need to refactor the legacy codebase to decouple the frontend from the monolithic backend architecture.'",
+            "response": "Voici la traduction fid\u00e8le de votre phrase :\n\n*\u00ab Nous devons refactoriser la base de code h\u00e9rit\u00e9e pour d\u00e9coupler le frontend du backend architectural monolithique. \u00bb*",
+            "duree": 1.44
+        },
+        {
+            "id": "JARG-04",
+            "categorie": "Jargon Technique",
+            "prompt": "Traduis en fran\u00e7ais : 'The API endpoint returns a 404 Not Found error if the query parameters are invalid.'",
+            "response": "L'endpoint de l'API renvoie une erreur 404 \"Not Found\" (Pas trouv\u00e9) en cas de param\u00e8tres de requ\u00eate invalides.",
+            "duree": 1.41
+        },
+        {
+            "id": "JARG-05",
+            "categorie": "Jargon Technique",
+            "prompt": "Traduis cette d\u00e9finition : 'Quantization reduces the precision of the model weights from 16-bit floating-point to 4-bit integers to save VRAM.'",
+            "response": "Voici la traduction de cette d\u00e9finition :\n\n'La quantification r\u00e9duit la pr\u00e9cision des poids du mod\u00e8le de points flottants \u00e0 16 bits vers des entiers \u00e0 4 bits pour \u00e9conomiser la VRAM.'",
+            "duree": 1.69
+        },
+        {
+            "id": "CODE-01",
+            "categorie": "Pr\u00e9servation du Code",
+            "prompt": "Traduis le texte en fran\u00e7ais mais ne traduis SURTOUT PAS ce qui est dans les backticks : 'To install the library, run `pip install transformers` in your terminal.'",
+            "response": "Pour installer la biblioth\u00e8que, ex\u00e9cutez `pip install transformers` dans votre terminal.",
+            "duree": 0.86
+        },
+        {
+            "id": "CODE-02",
+            "categorie": "Pr\u00e9servation du Code",
+            "prompt": "Traduis les commentaires de ce code Python en fran\u00e7ais, mais garde le code intact : 'def get_user(user_id):\\n    # Fetch user from database\\n    return db.query(user_id)'",
+            "response": "Voici les commentaires traduits en fran\u00e7ais tout en conservant le code intact :\n\n```python\ndef get_user(user_id):\n    # R\u00e9cup\u00e9rer l'utilisateur depuis la base de donn\u00e9es\n    return db.query(user_id)\n```",
+            "duree": 1.93
+        },
+        {
+            "id": "CODE-03",
+            "categorie": "Pr\u00e9servation du Code",
+            "prompt": "Traduis cette instruction : 'Change the `device_map` parameter to `\"auto\"` if you want PyTorch to handle the GPU allocation.'",
+            "response": "Voici la traduction de cette instruction en fran\u00e7ais :\n\n**\"Modifiez le param\u00e8tre `device_map` en `\"auto\"` si vous souhaitez que PyTorch g\u00e8re l'allocation des GPU.\"**",
+            "duree": 1.7
+        },
+        {
+            "id": "CODE-04",
+            "categorie": "Pr\u00e9servation du Code",
+            "prompt": "Traduis le texte explicatif mais conserve la structure JSON exacte : 'The server expects this payload: {\"status\": \"success\", \"data\": [1, 2, 3]}'",
+            "response": "```json\n{\n  \"traduit\": \"Le serveur attend ce chargement : {\\\"status\\\": \\\"success\\\", \\\"data\\\": [1, 2, 3]}\"\n}\n```",
+            "duree": 1.58
+        },
+        {
+            "id": "CODE-05",
+            "categorie": "Pr\u00e9servation du Code",
+            "prompt": "Traduis en fran\u00e7ais : 'If the `IndexError` persists, check the length of the `input_ids` tensor before slicing it.'",
+            "response": "Si la `IndexError` persiste, v\u00e9rifiez d'abord la longueur du tenseur `input_ids` avant de le d\u00e9couper.",
+            "duree": 1.25
+        },
+        {
+            "id": "MARK-01",
+            "categorie": "Maintien du Markdown",
+            "prompt": "Traduis en fran\u00e7ais en gardant strictement le m\u00eame formatage Markdown (gras et puces) : '\\n* **Speed**: Faster inference.\\n* **Memory**: Lower RAM usage.'",
+            "response": "* **Vitesse** : Inference plus rapide.\n* **M\u00e9moire** : Utilisation de RAM r\u00e9duite.",
+            "duree": 1.07
+        },
+        {
+            "id": "MARK-02",
+            "categorie": "Maintien du Markdown",
+            "prompt": "Traduis cette alerte en conservant le bloc de citation : '> **Warning:** Do not push your `.env` file containing API keys to the public GitHub repository.'",
+            "response": "> **Warning:** Do not push your `.env` file containing API keys to the public GitHub repository.",
+            "duree": 1.0
+        },
+        {
+            "id": "MARK-03",
+            "categorie": "Maintien du Markdown",
+            "prompt": "Traduis ce titre et ce lien Markdown : '### Step 2: Download the Model\\nYou can find the weights on [Hugging Face](https://huggingface.co/)'",
+            "response": "Voici la traduction et le lien Markdown traduits :\n\n**Titre traduit :**\n### \u00c9tape 2 : T\u00e9l\u00e9charger le Mod\u00e8le\nVous pouvez trouver les poids sur [Hugging Face](https://huggingface.co/)\n\n**Note :** Le lien Markdown est d\u00e9j\u00e0 correct et ne n\u00e9cessite pas de modification.",
+            "duree": 2.55
+        },
+        {
+            "id": "MARK-04",
+            "categorie": "Maintien du Markdown",
+            "prompt": "Traduis ce tableau Markdown en fran\u00e7ais : '| Feature | Supported |\\n|---|---|\\n| Text | Yes |\\n| Image | No |'",
+            "response": "Voici le tableau traduit en Markdown en fran\u00e7ais :\n\n```\n| Caract\u00e9ristique | Support\u00e9 |\n|-----------------|---------|\n| Texte           | Oui     |\n| Image           | Non     |\n```",
+            "duree": 1.7
+        },
+        {
+            "id": "MARK-05",
+            "categorie": "Maintien du Markdown",
+            "prompt": "Traduis en conservant le gras et l'italique : 'The *primary* goal of this update is to fix the **critical security vulnerability** in the auth module.'",
+            "response": "'The *primary* goal of this update is to fix the **critical security vulnerability** in the *auth* module.'",
+            "duree": 1.11
+        },
+        {
+            "id": "LONG-01",
+            "categorie": "Exhaustivit\u00e9 (Anti-condens\u00e9)",
+            "prompt": "Traduis ce long paragraphe technique sans le r\u00e9sumer : 'Continuous Integration and Continuous Deployment (CI/CD) is a method to frequently deliver apps to customers by introducing automation into the stages of app development. The main concepts attributed to CI/CD are continuous integration, continuous delivery, and continuous deployment. CI/CD is a solution to the problems integrating new code can cause for development and operations teams.'",
+            "response": "Voici la traduction litt\u00e9rale du long paragraphe technique :\n\n\u00ab **Continuous Integration and Continuous Deployment (CI/CD)** est une m\u00e9thode pour livrer fr\u00e9quemment des applications aux clients en introduisant l'automatisation dans les \u00e9tapes du d\u00e9veloppement d'applications. Les concepts principaux attribu\u00e9s \u00e0 CI/CD sont l'int\u00e9gration continue, la livraison continue et la d\u00e9ploiement continu. CI/CD est une solution aux probl\u00e8mes que l'int\u00e9gration de nouveaux codes peut causer pour les \u00e9quipes de d\u00e9veloppement et d'exploitation. \u00bb",
+            "duree": 3.97
+        },
+        {
+            "id": "LONG-02",
+            "categorie": "Exhaustivit\u00e9 (Anti-condens\u00e9)",
+            "prompt": "Traduis la totalit\u00e9 de ce texte explicatif : 'Retrieval-Augmented Generation (RAG) is a technique that grants generative artificial intelligence models information retrieval capabilities. It modifies interactions with a large language model (LLM) so that the model responds to user queries with reference to a specified set of documents, using this information to augment information drawn from its own vast, static training data.'",
+            "response": "Voici la traduction compl\u00e8te du texte explicatif en fran\u00e7ais :\n\n\u00ab **Retrieval-Augmented Generation (RAG)** est une technique qui conf\u00e8re aux mod\u00e8les d'intelligence artificielle g\u00e9n\u00e9rative des capacit\u00e9s de r\u00e9cup\u00e9ration d'informations. Elle modifie les interactions avec un grand mod\u00e8le de langage (LLM) de sorte que le mod\u00e8le r\u00e9ponde aux requ\u00eates utilisateurs en se basant sur un ensemble de documents sp\u00e9cifi\u00e9s, en utilisant cette information pour enrichir les donn\u00e9es tir\u00e9es de son propre vaste et statique ensemble d'entra\u00eenement. \u00bb",
+            "duree": 4.14
+        },
+        {
+            "id": "LONG-03",
+            "categorie": "Exhaustivit\u00e9 (Anti-condens\u00e9)",
+            "prompt": "Traduis int\u00e9gralement et fluidement : 'A vector database indexes and stores vector embeddings for fast retrieval and similarity search. Unlike traditional relational databases that query based on exact matches, vector databases use distance metrics to find the most mathematically similar vectors to the query.'",
+            "response": "Voici la traduction int\u00e9grale et fluide de votre phrase :\n\n*\u00ab Une base de donn\u00e9es vectorielle indexe et stocke les embeddings vectoriels pour des recherches de r\u00e9cup\u00e9ration et de similarit\u00e9 rapides. Contrairement aux bases de donn\u00e9es relationnelles traditionnelles qui effectuent des requ\u00eates bas\u00e9es sur des correspondances exactes, les bases de donn\u00e9es vectorielles utilisent des m\u00e9triques de distance pour trouver les vecteurs les plus math\u00e9matiquement similaires \u00e0 la requ\u00eate. \u00bb*",
+            "duree": 3.76
+        },
+        {
+            "id": "LONG-04",
+            "categorie": "Exhaustivit\u00e9 (Anti-condens\u00e9)",
+            "prompt": "Traduis sans omettre la moindre phrase : 'Fine-tuning modifies the weights of a pre-trained model on a smaller, domain-specific dataset. Parameter-Efficient Fine-Tuning (PEFT) techniques, such as LoRA, freeze most of the original model weights and only train a small number of additional parameters, significantly reducing the computational resources required.'",
+            "response": "Voici la traduction litt\u00e9rale et sans omission de votre phrase :\n\n\u00ab **Fine-tuning** modifie les poids d'un mod\u00e8le pr\u00e9-entra\u00een\u00e9 sur un ensemble de donn\u00e9es plus petit et sp\u00e9cifique au domaine. Les techniques de **Parameter-Efficient Fine-Tuning (PEFT)** comme LoRA, cong\u00e9lent la plupart des poids du mod\u00e8le original et n'entra\u00eenent qu'un petit nombre de param\u00e8tres suppl\u00e9mentaires, r\u00e9duisant ainsi consid\u00e9rablement les ressources computationnelles requises. \u00bb",
+            "duree": 3.7
+        },
+        {
+            "id": "LONG-05",
+            "categorie": "Exhaustivit\u00e9 (Anti-condens\u00e9)",
+            "prompt": "Traduis ce texte avec pr\u00e9cision : 'Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources. CORS also relies on a mechanism by which browsers make a preflight request to the server hosting the cross-origin resource.'",
+            "response": "Voici la traduction pr\u00e9cise du texte :\n\n\u00ab **Cross-Origin Resource Sharing (CORS)** est un m\u00e9canisme bas\u00e9 sur les en-t\u00eates HTTP qui permet \u00e0 un serveur d'indiquer quelles origines (domaine, sch\u00e9ma ou port) autres que sa propre origine un navigateur doit autoriser pour charger des ressources. **CORS** repose \u00e9galement sur un m\u00e9canisme par lequel les navigateurs effectuent une requ\u00eate de pr\u00e9-contr\u00f4le (preflight) vers le serveur h\u00e9bergeant la ressource \u00e0 origine crois\u00e9e. \u00bb",
+            "duree": 4.02
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+cat << 'EOF' > .gitignore
+
+#Ignorer les adapter LoRa/DoRa
+data/dora_sft/
+data/lora_sft/
+data/lora_dry_run/
