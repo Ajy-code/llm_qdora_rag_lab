@@ -68,4 +68,3 @@ class Parser():
         logger.info("Parsing terminé: %s", source_path)
         return parsed_document
 
-

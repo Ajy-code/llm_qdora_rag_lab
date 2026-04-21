@@ -1,5 +1,5 @@
 #Fais le mapping avec les bonnes fonctions en fonction du types
-import layout 
+from normalization_fonctions import layout
 LAYOUT_REPAIRERS = {
     "title": layout.repair_title_layout,
     "section_header": layout.repair_section_header_layout,

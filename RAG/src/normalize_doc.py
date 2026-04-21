@@ -140,7 +140,6 @@ def normalize_element(docling_item, docling_document, source_path: pathlib.Path)
                 "caption_text": caption,
                 "num_rows": docling_item.data.num_rows,
                 "num_cols": docling_item.data.num_cols,
-                "table_data": docling_item.data,
             },
         )
 
