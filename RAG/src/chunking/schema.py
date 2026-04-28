@@ -2,14 +2,12 @@ from pydantic import BaseModel, Field, field_validator, model_validator
 from pathlib import Path
 from typing import Any
 
-
 class ParentChunk(BaseModel):
     parent_id: str
     doc_id: str
     source_path: Path
 
-    page_start: int | None = None
-    page_end: int | None = None
+    page_no: int | None = None
 
     element_ids: list[str] = Field(default_factory=list)
     parent_type: str
@@ -113,3 +111,4 @@ class ChunkingConfig(BaseModel):
             raise ValueError("overlap_tokens doit être strictement inférieur à child_max_tokens")
 
         return self
+    
